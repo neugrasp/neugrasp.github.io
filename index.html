@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NeuGrasp</title>
 
-<!--   Global site tag (gtag.js) - Google Analytics -->
+  <!--   Global site tag (gtag.js) - Google Analytics -->
   <!-- 引入Google Analytics脚本，用于跟踪网页的访问数据。 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
@@ -201,11 +201,6 @@
               </div>
             </div>
           </div>
-<!--           <div class="content has-text-justified"> -->
-<!--           <p style="text-align: justify;">
-            <strong>Fig. 1. Overview of NeuGrasp.</strong> We introduce a generalizable method that utilizes background priors within a neural implicit surface framework to achieve real-time scene reconstruction and material-agostic grasping from observations within a narrow field of view.
-          </p> -->
-<!--         </div> -->
       </div>
     </div>
   </div>
@@ -295,7 +290,7 @@
         <div class="publication-video">
 <!--           <iframe src="PAPER_VIDEO_LINK"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-            <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+          <video poster="" id="toby" controls muted loop playsinline height="100%">
             <source src="./static/videos/NeuGrasp_1080_compressed2.mp4"
                     type="video/mp4">
           </video>
@@ -307,107 +302,34 @@
 </section>
 
 
+  
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <img src="./static/images/Fig2_600.png" alt="Teaser Image" width="100%" /><br>
+<!--           <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-justified"> -->
+                <p>
+                  <strong>Framework of NeuGrasp.</strong> NeuGrasp leverages background priors for neural surface reconstruction and material-agnostic grasp detection. A Residual Feature Enhancement module is proposed to enhance the model attention on foreground objects instead of irrelevant background information. We build an occupancy-prior volume from residual features and a shape-prior volume from scene features. These volumes are then combined with multi-view features using Residual and Source View Transformers, which are further refined by a Ray Transformer to capture geometric details. The resulting unified view feature and attention-weighted features are decoded into a signed distance function and converted into a radiance field. Finally, the grasping module maps the reconstructed geometry to 6-DoF grasp poses, enabling end-to-end training. 
+                </p>
+<!--               </div>
+            </div>
+          </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
 <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">SUB_VIDEO_TITLE_1</h2>
-          <p>
-            SUB_VIDEO_DESCRIPTION_1
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="RELATEVE_PATH_TO_SUB_VIDEO_1"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">SUB_VIDEO_TITLE_2</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              SUB_VIDEO_DESCRIPTION_2
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="RELATEVE_PATH_TO_SUB_VIDEO_2"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">TITLE_3</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">SUB_TITLE_3_1</h3>
-        <div class="content has-text-justified">
-          <p>
-            TITLE_DESCRIPTION_3_1
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="RELATIVE_LINK_OF_START_FRAME_IMAGE"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="RELATIVE_LINK_OF_FINAL_FRAME_IMAGE"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">SUB_TITLE_3_2</h3>
-        <div class="content has-text-justified">
-          <p>
-            TITLE_DESCRIPTION_3_2
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="PATH_OF_REPLAY_VIDEO"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
+      
     <!-- Concurrent Work. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
