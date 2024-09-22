@@ -1,10 +1,10 @@
-# PAPER_NAME
+# NeuGrasp
 
-This is the repository that contains source code for the [WEBSITE_NAME](WEBSITE_URL).
+This is the repository that contains source code for the [NeuGrasp](https://fanqyu.github.io/NeuGrasp).
 
 If you find PAPER_NAME useful for your work please cite:
 ```
-@article{park2021nerfies
+@article{todo
   author    = {AUTHERS},
   title     = {TITLE},
   journal   = {JOURNAL_NAME},
