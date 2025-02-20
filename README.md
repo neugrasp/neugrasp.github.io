@@ -1,6 +1,6 @@
 # NeuGrasp
 
-This is the repository that contains source code for the [NeuGrasp website](https://fanqyu.github.io/NeuGrasp).
+This is the repository that contains source code for the [NeuGrasp website](https://neugrasp.github.io/).
 
 If you find PAPER_NAME useful for your work please cite:
 ```
